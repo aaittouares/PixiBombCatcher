@@ -15,7 +15,7 @@ export class MainScreen extends Container {
     public score: ScoreCounter;
     private lives: LifeCounter;
     private difficulty: number = 1;
-    private ticker: Ticker;
+    //private ticker: Ticker;
 
     private elapsed = 0.0;
     private totalElapsed = 0.0;
@@ -47,7 +47,7 @@ export class MainScreen extends Container {
             this.bombs.push(bomb);
         }
 
-        this.ticker = Ticker.shared.add(this.update, this);
+        /*this.ticker =*/ Ticker.shared.add(this.update, this);
     }
 
     private update(deltaTime: number): void {
